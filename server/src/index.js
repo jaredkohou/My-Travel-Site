@@ -19,7 +19,7 @@ const appStart = () => {
         })
 
     }catch(error){
-
+        console.log(`Error: ${error.message}`)
     }
 }
 
