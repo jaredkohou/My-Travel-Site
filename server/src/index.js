@@ -14,7 +14,9 @@ const PORT = 8000
 //app start, function that'll run my app
 const appStart = () => {
     try {
-        app.listen()
+        app.listen(PORT, () => {
+            console.log(`my app is running at https://localhost:${PORT}`)
+        })
 
     }catch(error){
 
