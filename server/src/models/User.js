@@ -33,4 +33,11 @@ const UserSchema = new Schema({
         type: Date,
         required: false,
     },
+    images: {
+        type: Array,
+        default: {
+            url: 'hhtps://via.placeholder.com/468x400?text=User%20image',
+            public_id: Date.now(),
+        }
+    },
 })
