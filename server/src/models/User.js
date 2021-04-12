@@ -1,1 +1,1 @@
-const {} = require('monngoose')
+const {Schema, model} = require('monngoose')
