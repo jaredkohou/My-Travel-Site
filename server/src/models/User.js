@@ -21,4 +21,8 @@ const UserSchema = new Schema({
         type: Boolean,
         default: false,
     },
+    verificationCode: {
+        type: String,
+        required: false,
+    },
 })
