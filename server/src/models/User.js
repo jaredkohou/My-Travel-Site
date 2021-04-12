@@ -40,4 +40,16 @@ const UserSchema = new Schema({
             public_id: Date.now(),
         }
     },
-})
+    
+    about: {
+        type: String
+    },
+    banned: {
+        type: Boolean,
+        default: false
+    }, 
+    role: {
+        type: String,
+        default: 'subcriber'
+    }
+}, {timestamps: true})
