@@ -23,3 +23,4 @@ const appStart = () => {
     }
 }
 
+appStart()
