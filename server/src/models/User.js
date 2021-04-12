@@ -53,3 +53,6 @@ const UserSchema = new Schema({
         default: 'subcriber'
     }
 }, {timestamps: true})
+
+const User = model('User', UserSchema)
+module.exports = User
