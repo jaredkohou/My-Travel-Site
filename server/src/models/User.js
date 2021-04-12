@@ -54,5 +54,16 @@ const UserSchema = new Schema({
     }
 }, {timestamps: true})
 
+UserSchema.pre('save', async function (next){
+    let user = this
+    // if password field is not change return
+    if (!user.isModified('password')){
+        return next()
+    }
+    // if password was changed
+    user.password = await hash(user.password, 10)
+})
+
+
 const User = model('User', UserSchema)
 module.exports = User
