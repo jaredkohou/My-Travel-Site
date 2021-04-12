@@ -3,3 +3,10 @@ const {hash, compare} = require('bcryptjs')
 const {SECRET} = require('../constants')
 const {randomBytes} = require('crypto')
 
+// schema
+const UserSchema = new Schema({
+    username: {
+        type: String,
+        required: true,
+    },
+})
