@@ -29,4 +29,8 @@ const UserSchema = new Schema({
         type: String,
         required: false,
     },
+    resetPasswordExpiresIn: {
+        type: Date,
+        required: false,
+    },
 })
